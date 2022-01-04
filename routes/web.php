@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\OmipayController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,4 +16,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('Home');
+
+
+Route::get('/form', [OmipayController::class, 'index']);
+Route::post('/store-form', [OmipayController::class, 'submitForm']);
