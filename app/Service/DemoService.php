@@ -52,7 +52,7 @@ class DemoService
             'fee_cal' => strval($fee_cal),
             'fee_shipping' => strval($fee_shipping),
             'order_description' => strval($order_description),
-            'buyer_info' => strval(''), //"Họ tên người mua *|* Địa chỉ Email *|* Điện thoại *|* Địa chỉ"
+            'buyer_info' => strval('Mr Dũng'), //"Họ tên người mua *|* Địa chỉ Email *|* Điện thoại *|* Địa chỉ"
             'affiliate_code' => strval($affiliate_code),
         );
 
