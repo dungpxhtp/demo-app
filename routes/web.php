@@ -14,10 +14,10 @@ use App\Http\Controllers\OmipayController;
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
-})->name('Home');
+})->name('Home');*/
 
 
-Route::get('/form', [OmipayController::class, 'index']);
+Route::get('/', [OmipayController::class, 'index']);
 Route::post('/store-form', [OmipayController::class, 'submitForm']);
